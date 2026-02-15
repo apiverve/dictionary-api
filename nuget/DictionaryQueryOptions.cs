@@ -12,7 +12,6 @@ namespace APIVerve.API.Dictionary
     {
         /// <summary>
         /// The word for which you want to get the definition (e.g., apple)
-        /// Example: apple
         /// </summary>
         [JsonProperty("word")]
         public string Word { get; set; }
