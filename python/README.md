@@ -224,8 +224,9 @@ from apiverve_dictionary.apiClient import DictionaryAPIClient
 
 api = DictionaryAPIClient("[YOUR_API_KEY]")
 
+query = { "word": "apple" }
+
 try:
-    query = { "word": "apple" }
     result = api.execute(query)
     print(result)
 finally:
