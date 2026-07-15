@@ -4,18 +4,30 @@ declare module '@apiverve/dictionary' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface dictionaryResponse {
     status: string;
     error: string | null;
     data: DictionaryData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface DictionaryData {
-      word:            string;
-      definitionCount: number;
-      definitions:     string[];
+      word:            null | string;
+      definitionCount: number | null;
+      definitions:     (null | string)[];
   }
 
   export default class dictionaryWrapper {
