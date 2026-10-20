@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/dictionary",
-  "version": "1.2.0",
-  "description": "Dictionary is a simple tool for getting word definitions. It returns the definition a word.",
+  "version": "1.2.2",
+  "description": "Dictionary looks up word definitions for any given term. It returns every recorded meaning as a text list with a total definition count for e-readers, vocabulary builders, and writing assistants.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "dictionary", "dictionary api", "dictionary tool", "dictionary software", "dictionary service"
+    "dictionary api", "free dictionary api", "english dictionary api", "word api", "words api"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/dictionary-api/issues"
   },
-  "homepage": "https://dictionary.apiverve.com?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/dictionary?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
