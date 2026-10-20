@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Dictionary
   description: >-
-    Dictionary is a simple tool for getting word definitions. It returns the
-    definition a word.
+    Dictionary looks up word definitions for any given term. It returns every
+    recorded meaning as a text list with a total definition count for e-readers,
+    vocabulary builders, and writing assistants.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/dictionary:
     get:
-      summary: Get Word Definition
+      summary: Dictionary
       description: Get the definition of a word
       operationId: dictionary
       parameters:
