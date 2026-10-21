@@ -1,6 +1,6 @@
 # Dictionary API - PHP Package
 
-Dictionary is a simple tool for getting word definitions. It returns the definition a word.
+Dictionary looks up word definitions for any given term. It returns every recorded meaning as a text list with a total definition count for e-readers, vocabulary builders, and writing assistants.
 
 ## Installation
 
@@ -89,11 +89,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/dictionary?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/dictionary?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://dictionary.apiverve.com?utm_source=php&utm_medium=readme](https://dictionary.apiverve.com?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/dictionary?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/dictionary?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

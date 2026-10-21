@@ -1,7 +1,7 @@
 {
     "name": "apiverve/dictionary",
-    "description": "Dictionary is a simple tool for getting word definitions. It returns the definition a word.",
-    "version": "1.2.0",
+    "description": "Dictionary looks up word definitions for any given term. It returns every recorded meaning as a text list with a total definition count for e-readers, vocabulary builders, and writing assistants.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "dictionary",
-        "dictionary",
         "dictionary api",
-        "dictionary tool",
-        "dictionary software",
-        "dictionary service"
+        "free dictionary api",
+        "english dictionary api",
+        "word api",
+        "words api"
     ],
-    "homepage": "https://dictionary.apiverve.com?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/dictionary?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/dictionary",
