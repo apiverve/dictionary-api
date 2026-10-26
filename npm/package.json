@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/dictionary",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Dictionary looks up word definitions for any given term. It returns every recorded meaning as a text list with a total definition count for e-readers, vocabulary builders, and writing assistants.",
   "main": "index.js",
   "types": "index.d.ts",
