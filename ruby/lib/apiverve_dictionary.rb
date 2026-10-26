@@ -4,6 +4,6 @@ require_relative "apiverve_dictionary/client"
 
 module APIVerve
   module Dictionary
-    VERSION = "1.2.2"
+    VERSION = "1.2.3"
   end
 end
