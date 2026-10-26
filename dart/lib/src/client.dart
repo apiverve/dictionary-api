@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Dictionary API client.
 ///
-/// For more information, visit: https://dictionary.apiverve.com?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/dictionary?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [word] (required) - The word for which you want to get the definition (e.g., apple)

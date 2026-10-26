@@ -1,11 +1,11 @@
 # Dictionary API - Dart/Flutter Client
 
-Dictionary is a simple tool for getting word definitions. It returns the definition a word.
+Dictionary looks up word definitions for any given term. It returns every recorded meaning as a text list with a total definition count for e-readers, vocabulary builders, and writing assistants.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_dictionary.svg)](https://pub.dev/packages/apiverve_dictionary)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Dictionary API](https://dictionary.apiverve.com?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Dictionary API](https://apiverve.com/marketplace/dictionary?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_dictionary: ^1.1.14
+  apiverve_dictionary: ^1.2.3
 ```
 
 Then run:
@@ -67,12 +67,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [Dictionary API](https://dictionary.apiverve.com?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/dictionary](https://docs.apiverve.com/ref/dictionary?utm_source=dart&utm_medium=readme)
+- **API Home:** [Dictionary API](https://apiverve.com/marketplace/dictionary?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/dictionary](https://docs.apiverve.com/ref/dictionary?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -80,4 +80,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)

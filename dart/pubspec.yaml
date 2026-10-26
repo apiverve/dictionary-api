@@ -1,7 +1,7 @@
 name: apiverve_dictionary
-description: Dictionary is a simple tool for getting word definitions. It returns the definition a word.
-version: 1.1.14
-homepage: https://dictionary.apiverve.com?utm_source=dart&utm_medium=homepage
+description: "Dictionary looks up word definitions for any given term. It returns every recorded meaning as a text list with a total definition count for e-readers, vocabulary builders, and writing assistants."
+version: 1.2.3
+homepage: https://apiverve.com/marketplace/dictionary?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/dictionary-api/tree/main/dart
 
 environment:
