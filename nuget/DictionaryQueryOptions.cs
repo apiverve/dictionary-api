@@ -11,7 +11,7 @@ namespace APIVerve.API.Dictionary
     public class DictionaryQueryOptions
     {
         /// <summary>
-        /// The word for which you want to get the definition (e.g., apple)
+        /// The word or phrase to define (e.g., apple, ice cream, give up). Case-insensitive; inflected forms resolve to their base word
         /// </summary>
         [JsonProperty("word")]
         public string Word { get; set; }

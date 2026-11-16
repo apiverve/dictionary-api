@@ -40,6 +40,39 @@ namespace APIVerve.API.Dictionary
 
         [JsonProperty("definitions")]
         public string[] Definitions { get; set; }
+
+        [JsonProperty("matchedWord")]
+        public string MatchedWord { get; set; }
+
+        [JsonProperty("matchType")]
+        public string MatchType { get; set; }
+
+        [JsonProperty("baseForms")]
+        public object[] BaseForms { get; set; }
+
+        [JsonProperty("partsOfSpeech")]
+        public string[] PartsOfSpeech { get; set; }
+
+        [JsonProperty("meanings")]
+        public Meaning[] Meanings { get; set; }
+
+        [JsonProperty("pronunciation")]
+        public string Pronunciation { get; set; }
+    }
+
+    public partial class Meaning
+    {
+        [JsonProperty("partOfSpeech")]
+        public string PartOfSpeech { get; set; }
+
+        [JsonProperty("definition")]
+        public string Definition { get; set; }
+
+        [JsonProperty("examples")]
+        public object[] Examples { get; set; }
+
+        [JsonProperty("synonyms")]
+        public string[] Synonyms { get; set; }
     }
 
     public partial class Premium
