@@ -28,6 +28,19 @@ declare module '@apiverve/dictionary' {
       word:            null | string;
       definitionCount: number | null;
       definitions:     (null | string)[];
+      matchedWord:     null | string;
+      matchType:       null | string;
+      baseForms:       any[];
+      partsOfSpeech:   (null | string)[];
+      meanings:        Meaning[];
+      pronunciation:   null | string;
+  }
+  
+  interface Meaning {
+      partOfSpeech: null | string;
+      definition:   null | string;
+      examples:     any[];
+      synonyms:     (null | string)[];
   }
 
   export default class dictionaryWrapper {
