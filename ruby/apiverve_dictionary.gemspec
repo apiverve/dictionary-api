@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "apiverve_dictionary"
-  spec.version       = "1.2.5"
+  spec.version       = "1.2.6"
   spec.authors       = ["APIVerve"]
   spec.email         = ["hello@apiverve.com"]
 
   spec.summary       = "Dictionary API - Ruby Client"
-  spec.description   = "Dictionary looks up word definitions for any given term. It returns every recorded meaning as a text list with a total definition count for e-readers, vocabulary builders, and writing assistants."
+  spec.description   = "Dictionary looks up word definitions for any given term. It returns every recorded meaning as a text list with a total definition count, plus modern part-of-speech meanings with examples, synonyms and IPA pronunciation, for e-readers, vocabulary builders, and writing assistants."
   spec.homepage      = "https://apiverve.com/marketplace/dictionary?utm_source=ruby&utm_medium=referral&utm_content=homepage"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.7.0"
