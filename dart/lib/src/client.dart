@@ -49,7 +49,7 @@ final _formatPatterns = {
 /// For more information, visit: https://apiverve.com/marketplace/dictionary?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
-/// * [word] (required) - The word for which you want to get the definition (e.g., apple)
+/// * [word] (required) - The word or phrase to define (e.g., apple, ice cream, give up). Case-insensitive; inflected forms resolve to their base word
 class DictionaryClient {
   final String apiKey;
   final String baseUrl;

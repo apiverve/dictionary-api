@@ -59,17 +59,56 @@ class DictionaryData {
   String? word;
   num? definitionCount;
   List<String>? definitions;
+  String? matchedWord;
+  String? matchType;
+  List<dynamic>? baseForms;
+  List<String>? partsOfSpeech;
+  List<DictionaryDataMeaningsItem>? meanings;
+  String? pronunciation;
 
   DictionaryData({
     this.word,
     this.definitionCount,
     this.definitions,
+    this.matchedWord,
+    this.matchType,
+    this.baseForms,
+    this.partsOfSpeech,
+    this.meanings,
+    this.pronunciation,
   });
 
   factory DictionaryData.fromJson(Map<String, dynamic> json) => DictionaryData(
       word: json['word'],
       definitionCount: json['definitionCount'],
       definitions: (json['definitions'] as List?)?.cast<String>(),
+      matchedWord: json['matchedWord'],
+      matchType: json['matchType'],
+      baseForms: (json['baseForms'] as List?)?.cast<dynamic>(),
+      partsOfSpeech: (json['partsOfSpeech'] as List?)?.cast<String>(),
+      meanings: (json['meanings'] as List?)?.map((e) => DictionaryDataMeaningsItem.fromJson(e)).toList(),
+      pronunciation: json['pronunciation'],
+    );
+}
+
+class DictionaryDataMeaningsItem {
+  String? partOfSpeech;
+  String? definition;
+  List<dynamic>? examples;
+  List<dynamic>? synonyms;
+
+  DictionaryDataMeaningsItem({
+    this.partOfSpeech,
+    this.definition,
+    this.examples,
+    this.synonyms,
+  });
+
+  factory DictionaryDataMeaningsItem.fromJson(Map<String, dynamic> json) => DictionaryDataMeaningsItem(
+      partOfSpeech: json['partOfSpeech'],
+      definition: json['definition'],
+      examples: (json['examples'] as List?)?.cast<dynamic>(),
+      synonyms: (json['synonyms'] as List?)?.cast<dynamic>(),
     );
 }
 
