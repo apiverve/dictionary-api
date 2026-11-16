@@ -3,8 +3,9 @@ info:
   title: Dictionary
   description: >-
     Dictionary looks up word definitions for any given term. It returns every
-    recorded meaning as a text list with a total definition count for e-readers,
-    vocabulary builders, and writing assistants.
+    recorded meaning as a text list with a total definition count, plus modern
+    part-of-speech meanings with examples, synonyms and IPA pronunciation, for
+    e-readers, vocabulary builders, and writing assistants.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -28,7 +29,9 @@ paths:
           schema:
             type: string
           required: true
-          description: The word for which you want to get the definition (e.g., apple)
+          description: >-
+            The word or phrase to define (e.g., apple, ice cream, give up).
+            Case-insensitive; inflected forms resolve to their base word
           example: apple
       responses:
         '200':
@@ -52,7 +55,7 @@ paths:
                 error: null
                 data:
                   word: apple
-                  definitionCount: 5
+                  definitionCount: 4
                   definitions:
                     - >-
                       The fleshy pome or fruit of a rosaceous tree (Pyrus malus)
@@ -100,8 +103,7 @@ paths:
                       apples. [U. S.] -- Apple snail or Apple shell (Zoöl.), a
                       fresh-water, operculated, spiral shell of the genus
                       Ampullaria. -- Apple tart, a tart containing apples. --
-                      Apple tree, a tree naturally bears apples. See Apple,
-                    - >-
+                      Apple tree, a tree naturally bears apples. See Apple, 2.
                       -- Apple wine, cider. -- Apple worm (Zoöl.), the larva of
                       a small moth (Carpocapsa pomonella) which burrows in the
                       interior of apples. See Codling moth. -- Dead Sea Apple.
@@ -109,6 +111,27 @@ paths:
                       apples of politics." S. B. Griffin. (b) A kind of gallnut
                       coming from Arabia. See Gallnut.  To grow like an apple;
                       to bear apples. Holland.
+                  matchedWord: apple
+                  matchType: exact
+                  baseForms: []
+                  partsOfSpeech:
+                    - noun
+                  meanings:
+                    - partOfSpeech: noun
+                      definition: >-
+                        fruit with red or yellow or green skin and sweet to tart
+                        crisp whitish flesh
+                      examples: []
+                      synonyms: []
+                    - partOfSpeech: noun
+                      definition: >-
+                        native Eurasian tree widely cultivated in many varieties
+                        for its firm rounded edible fruits
+                      examples: []
+                      synonyms:
+                        - orchard apple tree
+                        - Malus pumila
+                  pronunciation: ˈæp.əl
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
